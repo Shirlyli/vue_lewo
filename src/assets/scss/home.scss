@@ -1,0 +1,111 @@
+$gray: rgb(243, 236, 236);
+/*
+  * header区域
+  */
+  header {
+    // width: 100%;
+    height: 2rem;
+    background-color: $gray;
+    border-radius: 1.5rem;
+    position: fixed;
+    top: 0.6rem;
+    left: 0.6rem;
+    right: 0.6rem;
+    z-index: 2;
+    .svg-icon {
+      width: 1.3rem;
+      height: 1.3rem;
+      position: absolute;
+      left: 33%;
+      top: 0.3rem;
+    }
+    input {
+      height: 100%;
+      background-color: rgba(172, 165, 165, 0);
+      border: none;
+      position: absolute;
+      left: 40%;
+      font-size: .6rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+.conten {
+  height: calc(100vh - 4rem);
+  margin: 2.6rem 0.6rem;
+  box-sizing: border-box;
+  overflow: scroll;
+  /*
+  * swiper区域
+  */
+  .swiper-container {
+    width: 24rem;
+    --swiper-theme-color: #ff6600;
+    --swiper-pagination-color: white; /* 两种都可以 */
+    .swiper-wrapper {
+      width: 24rem;
+      height: 10rem;
+      margin-top: 0.4rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  };
+  /*
+  * 小导航条
+  */
+  .litNav{
+    height: 1rem;
+    margin: .4rem .4rem;
+    img{
+      width: 100%;
+    }
+  };
+  /*
+  * 中间导航
+  */
+  .midNavBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .6rem;
+    .midNavItem{
+      width: 25%;
+      margin-bottom: .6rem;
+      img{
+        width: 46%;
+        margin-left: 27%;
+      }
+    }
+  };  
+  /*
+  * 宣传图区域
+  */
+  .advertBox{
+    width: 100%;
+    .one{
+      img{
+        width: 50%;
+      }
+    };
+    .two{
+      img{
+        width: 50%;
+        height: 10rem;
+      }
+    }
+  };
+  /*
+  * 底部详情区域
+  */
+  .mainBox{
+    background-color: $gray;
+    .mainItem{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

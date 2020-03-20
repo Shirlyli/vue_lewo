@@ -1,0 +1,219 @@
+{
+  "id": "1688527",
+  "name": "lewo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6859834",
+      "name": "优优严选",
+      "font_class": "youyouyanxuan",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "90514",
+      "name": "正品保障",
+      "font_class": "zhengpinbaozhang",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "96800",
+      "name": "安全盾牌",
+      "font_class": "anquandunpai",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "464119",
+      "name": "圣诞简化-购物车",
+      "font_class": "shengdanjianhuagouwuche",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "515266",
+      "name": "领带_tie2",
+      "font_class": "lingdaitie2",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "522728",
+      "name": "爆款",
+      "font_class": "baokuan",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "756377",
+      "name": "Right arrow",
+      "font_class": "1201youjiantou",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "2542740",
+      "name": "排行",
+      "font_class": "paihang",
+      "unicode": "e8e6",
+      "unicode_decimal": 59622
+    },
+    {
+      "icon_id": "3758267",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "5344808",
+      "name": "点赞",
+      "font_class": "zan",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "6940846",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "7275398",
+      "name": "Search",
+      "font_class": "Search",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "7898821",
+      "name": "营销工具-团购秒杀",
+      "font_class": "yingxiaogongju-tuangoumiaosha",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11511731",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "12686839",
+      "name": "钱",
+      "font_class": "icon-",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "13436148",
+      "name": "京东2",
+      "font_class": "jingdong-copy-copy",
+      "unicode": "e8e9",
+      "unicode_decimal": 59625
+    },
+    {
+      "icon_id": "13436307",
+      "name": "钱",
+      "font_class": "icon--copy",
+      "unicode": "e8eb",
+      "unicode_decimal": 59627
+    },
+    {
+      "icon_id": "13436168",
+      "name": "05 产地直供",
+      "font_class": "chandizhigong-copy",
+      "unicode": "e8ea",
+      "unicode_decimal": 59626
+    },
+    {
+      "icon_id": "13436132",
+      "name": "淘宝",
+      "font_class": "taobao-copy",
+      "unicode": "e8e8",
+      "unicode_decimal": 59624
+    },
+    {
+      "icon_id": "4195142",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "13434367",
+      "name": "我的",
+      "font_class": "wode-copy",
+      "unicode": "e7bf",
+      "unicode_decimal": 59327
+    },
+    {
+      "icon_id": "1128774",
+      "name": "圈子",
+      "font_class": "quanzi",
+      "unicode": "e7bb",
+      "unicode_decimal": 59323
+    },
+    {
+      "icon_id": "5394539",
+      "name": "shop-car2",
+      "font_class": "shop-car",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "7962966",
+      "name": "榜单",
+      "font_class": "bangdan",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "13433929",
+      "name": "shop-car2",
+      "font_class": "shop-car-copy",
+      "unicode": "e7bc",
+      "unicode_decimal": 59324
+    },
+    {
+      "icon_id": "13433933",
+      "name": "榜单",
+      "font_class": "bangdan-copy",
+      "unicode": "e7bd",
+      "unicode_decimal": 59325
+    },
+    {
+      "icon_id": "13438705",
+      "name": "圈子",
+      "font_class": "quanzi-copy-copy",
+      "unicode": "e8ec",
+      "unicode_decimal": 59628
+    },
+    {
+      "icon_id": "13433935",
+      "name": "圈子",
+      "font_class": "quanzi-copy",
+      "unicode": "e7be",
+      "unicode_decimal": 59326
+    },
+    {
+      "icon_id": "937262",
+      "name": "home page fill",
+      "font_class": "homepagefill",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "13433851",
+      "name": "home page fill",
+      "font_class": "homepagefill-copy",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}
