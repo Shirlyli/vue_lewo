@@ -1,5 +1,6 @@
 $gray:rgb(233, 225, 225);
 $pink:rgb(240, 66, 217);
+$red:rgb(235, 41, 41);
 $black:#000000;
 $grayone:rgb(197, 190, 190);
 .main{
@@ -16,6 +17,7 @@ $grayone:rgb(197, 190, 190);
 .container{
   padding-top: 3rem;
   height: calc(100vh - 4rem);
+  margin-bottom: 4rem;
   overflow: scroll;
   .containItem{
     background-color: white;
@@ -52,6 +54,42 @@ $grayone:rgb(197, 190, 190);
       .time{
         font-size: .6rem;
         color: $grayone;
+      }
+      .txt{
+        font-size: .8rem;
+        color: $black;
+        font-weight: 400;
+      }
+      .img1{
+        width: 5rem;
+        margin: .6rem auto;
+      }
+      .bottom{
+        display: flex;
+        background-color: $gray;
+        font-size: .9rem;
+        .img2{
+          width: 2rem;
+          padding: .6rem;
+          flex:2
+        }
+        div{
+          flex:8;
+          padding: .6rem;
+          p{
+            color: $black;
+            font-weight: 400;
+          }
+          span{
+            color: $red;
+            font-size: .8rem;
+          }
+          span:nth-child(3){
+            margin-left: 5rem;
+            border: 1px solid $red;
+          }
+        }
+
       }
     }
   }

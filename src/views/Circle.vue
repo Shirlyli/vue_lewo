@@ -2,7 +2,7 @@
   <div class="main">
     <mt-header fixed title="乐屋精选"></mt-header>
     <div class="container">
-      <div class="containItem">
+      <div class="containItem" v-for="item in data" :key="item.id">
         <div class="imgLeft">
           <img src="../../public/image/icon/icon_head.png" alt />
         </div>
@@ -12,10 +12,17 @@
             <span>一键保存</span>
             <span>分享</span>
           </div>
-          <p class="time">2020-03-20 09:31</p>
-          <p class="txt"></p>
-          <img src alt />
-          <div class="bottom"></div>
+          <p class="time">{{item.time}}</p>
+          <p class="txt">{{item.content}}</p>
+          <img class="img1" :src="item.img1" />
+          <div class="bottom">
+            <img class="img2" :src="item.img2" alt />
+            <div>
+              <p>{{item.content2}}</p>
+              <span>{{item.sale1}}</span>
+              <span>{{item.sale}}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -24,7 +31,15 @@
 
 <script>
 export default {
-  name: 'circles'
+  name: 'circles',
+  data () {
+    return {
+      data: []
+    }
+  },
+  async created () {
+    this.data = await this.$http.get('/js/CircleConXuan.json')
+  }
 }
 </script>
 
