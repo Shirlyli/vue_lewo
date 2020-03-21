@@ -1,0 +1,99 @@
+$puple:rgba(187, 131, 187, 0);
+$puple1:rgb(131, 57, 131);
+$gray:rgba(212, 203, 203, 0.849);
+.top {
+  background: url('../../public/image/user-bg.png') no-repeat;
+  background-size: 100% 9rem;
+  background-origin: content-box;
+  height: 9rem;
+  .mint-header {
+    color: white;
+    background-color: $puple;
+    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .topbox{
+    padding-top: 2.6rem;
+    margin-left: 2rem;
+    display: flex;
+    color: white;
+    font-size: 1rem;
+    img{
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    div{
+      padding: .6rem;
+      span{
+        font-size: .6rem;
+        margin-right: 1rem;
+      }
+      span:nth-child(3){
+        padding: 0 .3rem;
+        background-color: $puple1;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+.mid_one{
+  display: flex;
+  margin-top: 1rem;
+  font-size: .8rem;
+  font-weight: 200;
+  border-bottom: 1px solid $gray;
+  div{
+    flex:1;
+    text-align: center;
+    p{
+      margin-bottom: .6rem;
+    }
+  }
+}
+.mid_two{
+  display: flex;
+  font-size: .6rem;
+  font-weight: 200;
+  div{
+    flex:1;
+    text-align: center;
+    padding: .6rem 0;
+    img{
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+.bottom{
+  .botcon{
+    background-color: rgba(231, 226, 226, 0.849);
+    height: 1rem;
+  }
+  .botmain{
+    p{
+      margin: .6rem auto;
+      padding-left: .6rem;
+      font-weight: 400;
+    }
+    .botitem{
+      display: flex;
+      flex-wrap: wrap;
+      div{
+        width: 25%;
+        text-align: center;
+        margin-bottom: .6rem;
+        img{
+          width: 2rem;
+          height: 2rem;
+        }
+        p{
+          font-size: .6rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  
+}
