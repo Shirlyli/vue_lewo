@@ -9,7 +9,7 @@
         <img src="../../public/image/05-1.png" alt slot="grayIcon" />
         <img src="../../public/image/05-2.png" alt slot="redIcon" />
       </TabbBarItem>
-      <TabbBarItem title="超级榜" mark="super" :active="receive" @changeactive="doChange">
+      <TabbBarItem title="超级榜" mark="rank" :active="receive" @changeactive="doChange">
         <img src="../../public/image/02-1.png" alt slot="grayIcon" />
         <img src="../../public/image/02-2.png" alt slot="redIcon" />
       </TabbBarItem>
