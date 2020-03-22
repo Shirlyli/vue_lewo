@@ -15,7 +15,10 @@ import './plugins/mint.js'
 // 引入 symbol 字体图标并封装成一个组件
 import IconSvg from './views/IconSvg.vue'
 
-// 引入ajax请求
+// 引入 vuex 数据
+import store from './store/index'
+
+// 引入 ajax 请求
 import axios from './api/axios'
 Vue.prototype.$http = axios
 
@@ -30,5 +33,6 @@ Router.prototype.push = function push (location) {
 }
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')

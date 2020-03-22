@@ -80,7 +80,7 @@
           infinite-scroll-disabled="loading"
           infinite-scroll-distance="10"
         >
-          <div v-for="item in MainData" :key="item.id" class="mainItem">
+          <div v-for="item in MainData" :key="item.id" class="mainItem" @click="toGoodsInfo()">
             <MainContent :topTitle="item.title" :midPrice="item.price" :botmTxt="item.share">
               <img :src="item.img" alt slot="ConImg" />
             </MainContent>
@@ -135,6 +135,9 @@ export default {
       this.MainData = await this.$http.get('/js/HomeConYan.json')
       // console.log(this.MainData)
       this.start++
+    },
+    toGoodsInfo () {
+      this.$router.push('/togoodsinfo')
     }
   },
   mounted () {
