@@ -1,19 +1,32 @@
 <template>
   <div>
     <mt-header fixed title="购物车"></mt-header>
-    <div class="img">
+    <div class="img" v-if="emptyCartIsShow">
       <img src="../../public/image/emptyCart.jpg" alt />
       <div>
         <span>空空如也</span>
         <span>随便逛逛></span>
       </div>
     </div>
+    <div class="cart" :isShow="cartIsShow">
+      <GoodCart></GoodCart>
+    </div>
   </div>
 </template>
 
 <script>
+import GoodCart from './Cart/GoodCart'
 export default {
-  name: 'shopcar'
+  name: 'shopcar',
+  components: {
+    GoodCart
+  },
+  data () {
+    return {
+      emptyCartIsShow: true,
+      cartIsShow: false
+    }
+  }
 }
 </script>
 
@@ -33,13 +46,16 @@ $pink: rgb(240, 66, 217);
   img {
     max-width: 8rem;
   }
-  span{
-    font-size: .6rem;
+  span {
+    font-size: 0.6rem;
     font-weight: 300;
-    margin-right: .8rem;
+    margin-right: 0.8rem;
   }
-  span:nth-child(2){
+  span:nth-child(2) {
     color: $pink;
   }
+}
+.cart {
+  margin-top: 4rem;
 }
 </style>

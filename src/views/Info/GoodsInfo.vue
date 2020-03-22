@@ -51,8 +51,9 @@
         <span>立即购买</span>
       </div>
     </div>
+
     <div class="goodsdetail">
-      <GoodsDetail v-if="ishow"></GoodsDetail>
+      <GoodsDetail :isshow="isShow" @send="doclose" @send1="doclose"></GoodsDetail>
     </div>
   </div>
 </template>
@@ -66,12 +67,15 @@ export default {
   },
   data () {
     return {
-      ishow: false
+      isShow: false
     }
   },
   methods: {
     toGoodsDetail () {
-      this.ishow = true
+      this.isShow = true
+    },
+    doclose (val) {
+      this.isShow = val
     }
   }
 }
