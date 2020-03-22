@@ -9,7 +9,8 @@ const routes = [
   { path: '/circle', name: 'circles', component: () => import('../views/Circle.vue'), meta: { title: '圈子' } },
   { path: '/rank', name: 'rank', component: () => import('../views/Rank.vue'), meta: { title: '超级榜' } },
   { path: '/shopcar', name: 'shopcar', component: () => import('../views/ShopCar.vue'), meta: { title: '购物车' } },
-  { path: '/mine', name: 'mine', component: () => import('../views/Mine.vue'), meta: { title: '我的' } }
+  { path: '/mine', name: 'mine', component: () => import('../views/Mine.vue'), meta: { title: '我的' } },
+  { path: '/togoodsinfo', name: 'goodsinfo', component: () => import('../views/Info/GoodsInfo.vue'), meta: { title: '详情' } }
 ]
 
 const router = new VueRouter({
