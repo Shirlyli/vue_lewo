@@ -1,20 +1,21 @@
 <template>
   <div>
     <mt-header fixed title="购物车"></mt-header>
-    <div class="img" v-if="emptyCartIsShow">
+    <div class="img" v-if="!getBoolen">
       <img src="../../public/image/emptyCart.jpg" alt />
       <div>
         <span>空空如也</span>
-        <span>随便逛逛></span>
+        <span @click="toHome">随便逛逛></span>
       </div>
     </div>
-    <div class="cart" :isShow="cartIsShow">
+    <div class="cart" v-if="getBoolen">
       <GoodCart></GoodCart>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import GoodCart from './Cart/GoodCart'
 export default {
   name: 'shopcar',
@@ -23,8 +24,13 @@ export default {
   },
   data () {
     return {
-      emptyCartIsShow: true,
-      cartIsShow: false
+      // emptyCartIsShow: true
+    }
+  },
+  computed: mapGetters(['getBoolen']),
+  methods: {
+    toHome () {
+      this.$router.push('/home')
     }
   }
 }
@@ -36,6 +42,7 @@ $pink: rgb(240, 66, 217);
   background-color: white;
   color: $pink;
   font-size: 1rem;
+  border-bottom: 1px solid #dbd7d7;
 }
 .img {
   position: fixed;

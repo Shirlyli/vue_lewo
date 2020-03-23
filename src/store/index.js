@@ -6,12 +6,16 @@ Vue.use(Vuex)
 
 const state = {
   count: 1,
-  cart: []
+  cart: [],
+  cartshow: false
 }
 
 const getters = {
   getCount (state) {
     return state.count
+  },
+  getBoolen (state) {
+    return state.cartshow
   }
 }
 
@@ -21,6 +25,12 @@ const actions = {
   },
   addCount ({ commit }, id) {
     commit('addCount', id)
+  },
+  delall ({ commit }) {
+    commit('delall')
+  },
+  changeBoolen ({ commit }) {
+    commit('changeBoolen')
   }
 }
 
@@ -38,16 +48,20 @@ const mutations = {
   },
   addCount (state, id) {
     state.count++
-    // const cartobj = state.cart.find((item) => item.id === id)
-    // // 判断购物车中是否存在该商品，如果存在数量++，如果不存在。将该商品push到购物车中
-    // if (cartobj) {
-    //   cartobj.count++
-    // } else {
-    //   state.cart.push({
-    //     count: 1
-    //   }
-    //   )
-    // }
+    const cartobj = state.cart.find((item) => item.id === id)
+    // 判断购物车中是否存在该商品，如果存在数量++，如果不存在。将该商品push到购物车中
+    if (cartobj) {
+      cartobj.count++
+    } else {
+      state.cart.push({
+        count: 1
+      }
+      )
+    }
+  },
+  changeBoolen (state) {
+    state.cartshow = !state.cartshow
+    return state.cartshow
   }
 }
 export default new Vuex.Store({

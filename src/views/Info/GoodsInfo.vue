@@ -48,7 +48,7 @@
       </div>
       <div class="now">
         <span @click="toGoodsDetail">加入购物车</span>
-        <span>立即购买</span>
+        <span @click="toGoodsDetail">立即购买</span>
       </div>
     </div>
 
