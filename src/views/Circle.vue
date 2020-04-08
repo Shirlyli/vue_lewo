@@ -39,6 +39,8 @@ export default {
   },
   async created () {
     this.data = await this.$http.get('/js/CircleConXuan.json')
+    const list = await this.$http.get('/qishitong/h5web/index')
+    console.log(list.data)
   }
 }
 </script>
